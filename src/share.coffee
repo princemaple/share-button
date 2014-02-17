@@ -105,17 +105,6 @@ $.fn.share = (opts) ->
       ).appendTo $("head")
 
 
-    ################
-    # Inject Fonts #
-    ################
-
-    unless $('link[href="'+config.protocol+'fonts.googleapis.com/css?family=Lato:900"]').length
-      $("<link />").attr(
-        rel: "stylesheet"
-        href: "#{config.protocol}fonts.googleapis.com/css?family=Lato:900&text=#{config.button_text}"
-      ).appendTo $("head")
-
-
     ##############
     # Inject CSS #
     ##############
